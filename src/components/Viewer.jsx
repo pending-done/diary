@@ -3,8 +3,7 @@ import "./Viewer.css";
 import { getEmotionImage } from "../util/get-emotion-image";
 import { emotionList } from "../util/constants";
 
-const Viewer = () => {
-  const emotionId = 3;
+const Viewer = ({ createdDate, emotionId, content }) => {
   const emotionItem = emotionList.find((item) => item.emotionId === emotionId);
 
   return (
